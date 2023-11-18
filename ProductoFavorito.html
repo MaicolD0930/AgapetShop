@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
   <link rel="stylesheet" href="Css/PFav.css">
   <link rel="icon" href="Icon/ICONO.ico"> 
   <title>Productos Favoritos</title>
@@ -63,20 +65,57 @@
     </header>
 
     <div class="container">
-        <div class="OP2 main2 row titu3">
+        <div class="main2 row titu3">
             <div class="Nulo">
                 <h4>Actualmente Usted no tiene productos favoritos</h4>
                 <button id="AFav" class="btn btn-success">¡Agregar Productos!</button>
             </div>  
-            <div class="OP2 col-md-12" id="CargarContenido" >
+
+            <div class="OP2 row col-md-12" id="CargarContenido">
             </div>
-            <button id="Eli">Eliminar</button>
+
         </div>
+        <div class="Nulo1">
+          <button id="DeleteAll" class="btn btn-danger">¡Eliminar todos los productos de Favoritos!</button>
+      </div>    
     </div>
 
 
-
-
+    <footer class="col-md-12">
+        <section class="row">
+          <div class="pr col-md-4">
+            <img src="img/Agapet.png" alt="" />
+            <p>Distribuimos los mejores productos para tus mascotas</p>
+          </div>
+          <div class="sc col-md-4">
+            <p>¡Envianos un mensaje!</p>
+            <div class="cr input-group mb-3">
+              <span class="input-group-text">@</span>
+              <input id="Correo" type="text" class="form-control" placeholder="Correo" />
+            </div>
+            <div class="cr input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-person"></i></span>
+              <input id="Nombre" type="text" class="form-control" placeholder="Nombre" />
+            </div>
+            <div class="cr input-group mb-3">
+              <span class="input-group-text"
+                ><i class="bi bi-pencil-fill"></i
+              ></span>
+              <input id="Msg" type="text" class="form-control" placeholder="Mensaje" />
+            </div>
+            <button class="btn btn-success" id="BtnAgregar">Enviar</button>
+          </div>
+          <div class="tr col-md-4">
+            <h4>Maneja tu cuenta</h4>
+            <div>
+              <a href="">Mi Cuenta</a>
+            </div>
+            <div>
+              <a href="">Mis Pedidos</a>
+            </div>
+          </div>
+        </section>
+      </footer>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
 crossorigin="anonymous"></script>
 <script src="Js/PFavorito.js"></script>

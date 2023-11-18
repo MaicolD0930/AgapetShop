@@ -1,4 +1,7 @@
 $(document).ready(function() {
+        $('.PrimeroIzquierda').toggleClass("col-md-4", false);
+        $('.PrimeroDerecha').toggleClass("col-md-8", false);
+
     $('#Cm3').hide();
         //Redireccionar botones
         $("#Fav").click(function() {
@@ -39,12 +42,34 @@ $(document).ready(function() {
 });
 
   function botonClicado() {
-    var boton = $(this);
-    var divPadre = boton.closest('div');
-
-    var ProducotDiv = divPadre.html()
-    localStorage.setItem('DivGuardado', ProducotDiv);
-    alert('¡Se agrego el producto a favoritos!');
+    if(localStorage.getItem('DivGuardado') === null){
+        $('.PrimeroIzquierda').toggleClass("col-md-4", true);
+        $('.PrimeroDerecha').toggleClass("col-md-8", true);
+        $('.Fav1').removeClass("Oculto");
+        var boton = $(this);
+        var divPadre = boton.closest('div');
+        var ProducotDiv = divPadre.html();
+        localStorage.setItem('DivGuardado', ProducotDiv);
+        alert('¡Se agrego el producto a favoritos! Cantidad Favoritos: 1');
+        $('.Fav1').addClass("Oculto");
+        $('#PrimeroIzquierda').toggleClass("col-md-4", false);
+        $('#PrimeroDerecha').toggleClass("col-md-8", false);
+    }else{
+        if(localStorage.getItem('DivGuardado1') === null){
+            $('.PrimeroIzquierda').toggleClass("col-md-4", true);
+            $('.PrimeroDerecha').toggleClass("col-md-8", true);
+            $('.Oculto').removeClass("Fav1");
+            var boton = $(this);
+            var divPadre = boton.closest('div');
+            var ProducotDiv1 = divPadre.html();
+            localStorage.setItem('DivGuardado1', ProducotDiv1);
+            alert('¡Se agrego el producto a favoritos! Cantida Favoritos: 2');
+            $('.Oculto').addClass("Fav1");
+            $('.PrimeroIzquierda').toggleClass("col-md-4", false);
+            $('.PrimeroDerecha').toggleClass("col-md-8", false);
+        }else{
+            alert("!! Solo puede tener dos productos en favorito !!")
+        }   
+    }
   }
-
   $('.Fav').click(botonClicado);

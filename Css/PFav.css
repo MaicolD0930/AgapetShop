@@ -67,19 +67,47 @@ span{
 }
 
 /* Body */
+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.titu3{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 40px;
+    width: 70%; 
+}
 .OP2{
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
     margin-top: 40px;
 }
-.OP2 img{
+#PrimeroIzquierda{
+    border-right: 1px solid black;
+}
+#PrimeroIzquierda img{
     margin-top: 10px;
     border-bottom: 1px solid black;
     margin-bottom: 20px;
-    height: 170px;
-    width: 100px;
+    margin-left: 10%;
+    height: 240px;
+    width: 150px;
+    display: inline-block;
 }
+#PrimeroDerecha{
+    text-align: center;
+}
+#PrimeroDerecha h6{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+#PrimeroDerecha p{
+    margin-bottom: 5%;
+}
+
 .Opciones{
     margin-bottom: 10px;
     border: 1px solid black;
@@ -108,6 +136,95 @@ span{
     margin-top: 50px;
     text-align: center;
 }
+.Nulo1{
+    margin-left: 20%;
+}
 .Nulo button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#CargarContenido{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+}
+#CargarContenido1{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+}
+#CargarContenido1 #PrimeroIzquierda img{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    height: 240px;
+    width: 150px;
+    display: inline-block;
+}
+
+/* FOOTER */
+footer{
+    background-color: white;
+    margin-top: 40px;
+    color: #000000;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    border-top: 1px solid black;
+
+}
+footer img{
+    width: 350px;
+    margin-right: 80px;
+}
+.pr{
+    border-right: 1px solid black ;
+}
+.pr p{
+    margin-left: 70px;
+    margin-right: 110px;
+    margin-bottom: 40px;
+}
+.sc{
+    border-right: 1px solid black ;
+    display: inline;    
+}
+.sc p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Fot{
+    margin-top: 20px;
+}
+.btn{
+    margin-top: 20px;
+}
+.cr{
+    width: 300px;
+    margin-left: 44px;
+}
+.tr{
+    text-align: center;
+    
+}
+.tr h4{
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.tr a{
+    font-size: 18px;
+
+    color: #7DA66A;
+    text-decoration-color: #000000;
+}
+.tr div{
+    margin-left: 70px;
     margin-top: 40px;
 }

@@ -115,6 +115,15 @@ article{
 .Oj:hover{
     fill: blue;
 }
+#PrimeroDerecha{
+    margin-top: -30px;
+}
+.Botones{
+    margin-bottom: 2px;
+}
+#InfoP{
+    display: none;
+}
 .Comentarios{
     background-color: white;
     border-radius: 5px;

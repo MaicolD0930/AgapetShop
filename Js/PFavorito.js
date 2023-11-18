@@ -1,24 +1,63 @@
 $(document).ready(function() {
+    $('#PrimeroIzquierda').toggleClass("col-md-4", true);
     //Cargar LocalStorage
-    var Div = localStorage.getItem('DivGuardado');
-    $('#CargarContenido').html(Div);
+    if(localStorage.getItem('DivGuardado') != null){
+        $(".Nulo").hide();
+        var Div = localStorage.getItem('DivGuardado');
+        $('#CargarContenido').html(Div);
+    }
+    if(localStorage.getItem('DivGuardado') === null){
+        $(".Nulo").show();
+        $('#CargarContenido').hide();
+    }
+    if(localStorage.getItem('DivGuardado1') != null){
+        var Li =$('<div class="OP2 row col-md-12 " id="CargarContenido1">');
+        $(".titu3").append(Li);
+        var Div1 = localStorage.getItem('DivGuardado1');
+        $('#CargarContenido1').html(Div1);
+        $(".Nulo").hide();
+        $("#CargarContenido").css("margin-bottom","-20px");
+    }
+    if(localStorage.getItem('DivGuardado1') === null){
+        $('#CargarContenido1').hide();
+    }
+    if(localStorage.getItem('DivGuardado') === null && localStorage.getItem('DivGuardado1') === null){
+        $(".Nulo").show();
+        $(".Nulo1").hide();
+    }
+
     //Eliminar Campos
-    $("#Eli").click(function() {
-        localStorage.removeItem('DivGuardado');
+    $(".Comentarios").on("click", "#Eliminar", function() {
+        $(this).closest("li").remove();
+        $('#Cm3').hide();
+        $('#Cm2').show();
+    });
+    $(".Fav1").click(function() {
+        localStorage.setItem('DivGuardado', null)
+        localStorage.removeItem('DivGuardado')
+        alert("Producto N.1 Eliminado de Favoritos")
         window.location.href = "ProductoFavorito.html";
     });
-    //Comprobar si El LocalStorage esta vacio 
-    if(localStorage.getItem('DivGuardado')===null){
-        $("#Eli").hide();
-        $(".Nulo").show();
-    }
-    else{
-        $(".Nulo").hide();
-        $("#Eli").show();
-    }
+    $(".Oculto").click(function() {
+        localStorage.setItem('DivGuardado1', null);
+        localStorage.removeItem('DivGuardado1')
+        alert("Producto N.2 Eliminado de Favoritos")
+        window.location.href = "ProductoFavorito.html";
+    });
+    $("#DeleteAll").click(function() {
+        localStorage.setItem('DivGuardado', null)
+        localStorage.removeItem('DivGuardado')
+        localStorage.setItem('DivGuardado1', null);
+        localStorage.removeItem('DivGuardado1')
+        alert("Se Eliminaron Todos Los Productos de Favoritos")
+        window.location.href = "ProductoFavorito.html";
+    });
+    
+
     //Redirigir
     $("#AFav").click(function() {
         window.location.href = "CarritoCompras.html";
+        $(".Nulo1").hide();
     });
     
 
