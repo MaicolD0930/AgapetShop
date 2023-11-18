@@ -52,8 +52,8 @@ $(document).ready(function() {
         localStorage.setItem('DivGuardado', ProducotDiv);
         alert('¡Se agrego el producto a favoritos! Cantidad Favoritos: 1');
         $('.Fav1').addClass("Oculto");
-        $('#PrimeroIzquierda').toggleClass("col-md-4", false);
-        $('#PrimeroDerecha').toggleClass("col-md-8", false);
+        $('.PrimeroIzquierda').toggleClass("col-md-4", false);
+        $('.PrimeroDerecha').toggleClass("col-md-8", false);
     }else{
         if(localStorage.getItem('DivGuardado1') === null){
             $('.PrimeroIzquierda').toggleClass("col-md-4", true);
