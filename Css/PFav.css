@@ -129,6 +129,9 @@ span{
 .Fav1:hover{
     fill: rgb(255, 0, 0);
 }
+.Oculto:hover{
+    fill: rgb(255, 0, 0);
+}
 .Oj:hover{
     fill: blue;
 }
