@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover para Cambiar Iconos</title>
+  <!-- Incluye Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Incluye jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    /* Estilos iniciales para los iconos */
+    .icono {
+      font-size: 24px;
+      color: #333;
+      transition: color 0.3s; /* Transición de color al pasar el mouse */
+    }
+
+    /* Estilos al pasar el mouse sobre el icono */
+    .icono:hover {
+      color: #e74c3c; /* Cambia el color al pasar el mouse */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Iconos con la clase "icono" -->
+<i class="fas fa-heart icono" id="icono1"></i>
+<i class="fas fa-star icono" id="icono2"></i>
+<i class="fas fa-thumbs-up icono" id="icono3"></i>
+
+<script>
+  // Función que se ejecuta cuando se pasa el mouse sobre un icono
+  $('.icono').hover(
+    function() {
+      // Cambia el icono al pasar el mouse
+      $(this).toggleClass('far fa-heart fas fa-heart');
+    },
+    function() {
+      // Cambia el icono de nuevo cuando el mouse sale
+      $(this).toggleClass('far fa-heart fas fa-heart');
+    }
+  );
+</script>
+
+</body>
+</html>

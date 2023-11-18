@@ -1,0 +1,253 @@
+body{
+    background-color: #7DA66A;
+}
+/* Cabecera */
+.ImagenTitulo{
+    background-color: white;
+    text-align: center;
+}
+.ImagenTitulo img{
+
+    content:center;
+    height: 130px;
+}
+.Top{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+}
+.he{
+    float: left;
+  }
+.he a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.he a:hover {
+    background-color: black;
+    color: #7DA66A;
+    padding-bottom: 16px;
+}
+.heRight{
+    float: right;
+    margin: 0 5px;
+}
+.heRight svg{
+    margin-top: 10px;
+    width: 30px;
+    height: 100%;
+    fill: rgb(0, 0, 0);
+    fill-rule: evenodd;
+}
+.Buscar{
+    top: 9px;
+    width: 300px;
+    margin-right: 10px;
+}
+span{
+    width: 40px;
+}
+.iconos{
+    background-color: white;
+    border: none;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    height: 54px;
+}
+.heRight svg:hover{ 
+    fill: #7DA66A;
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right:  4px;
+    width: 30px;
+}
+
+
+
+/* Body */
+.Filtro{
+    float: right;
+    width: 250px;
+    margin-right: 10px;
+}
+.container{
+    text-align: center;
+}
+article{
+    margin-bottom: 30px;
+}
+
+.OP2{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.OP2 img{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    height: 170px;
+    width: 100px;
+}
+.Opciones{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.Opciones:hover{
+    background-color: #7DA66A;
+}
+.Opciones svg{
+    width: 30px;
+}
+.Fav:hover{
+    fill: red;
+}
+.Fav1{
+    display: none;
+}
+.Oj:hover{
+    fill: blue;
+}
+.Comentarios{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.Cm1{
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.Cm1 h6{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Cm2{
+    margin-top: 40px;
+    color: #7DA66A  ;
+}
+.cc3{
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 800px;
+
+}
+
+.cc3 h6{
+    margin-left : -400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cc3 p{
+    margin-left : -400px;
+    margin-top: 20px;
+}
+.cc3 button{
+    margin-left : -400px;
+    margin-bottom: 10px;
+}
+/* Carrusel Comentarios */
+.Comentarios ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: Comentarios 20s infinite alternate ease-in-out;
+}
+.Comentarios li{
+    width: 1190px;
+    list-style: none;
+    position: relative;
+}
+
+@keyframes Comentarios {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+/* FOOTER */
+footer{
+    background-color: white;
+    margin-top: 40px;
+    color: #000000;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    border-top: 1px solid black;
+
+}
+footer img{
+    width: 350px;
+    margin-right: 80px;
+}
+.pr{
+    border-right: 1px solid black ;
+}
+.pr p{
+    margin-left: 70px;
+    margin-right: 110px;
+    margin-bottom: 40px;
+}
+.sc{
+    border-right: 1px solid black ;
+    display: inline;    
+}
+.sc p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Fot{
+    margin-top: 20px;
+}
+.btn{
+    margin-top: 20px;
+}
+.cr{
+    width: 300px;
+    margin-left: 44px;
+}
+.tr{
+    text-align: center;
+    
+}
+.tr h4{
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.tr a{
+    font-size: 18px;
+
+    color: #7DA66A;
+    text-decoration-color: #000000;
+}
+.tr div{
+    margin-left: 70px;
+    margin-top: 40px;
+}

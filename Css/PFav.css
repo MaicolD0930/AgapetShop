@@ -1,0 +1,113 @@
+body{
+    background-color: #7DA66A;
+}
+/* Cabecera */
+.ImagenTitulo{
+    background-color: white;
+    text-align: center;
+}
+.ImagenTitulo img{
+
+    content:center;
+    height: 130px;
+}
+.Top{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+}
+.he{
+    float: left;
+  }
+.he a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.he a:hover {
+    background-color: black;
+    color: #7DA66A;
+    padding-bottom: 16px;
+}
+.heRight{
+    float: right;
+    margin: 0 5px;
+}
+.heRight svg{
+    margin-top: 10px;
+    width: 30px;
+    height: 100%;
+    fill: rgb(0, 0, 0);
+    fill-rule: evenodd;
+}
+.Buscar{
+    top: 9px;
+    width: 300px;
+    margin-right: 10px;
+}
+span{
+    width: 40px;
+}
+.iconos{
+    background-color: white;
+    border: none;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    height: 54px;
+}
+.heRight svg:hover{ 
+    fill: #7DA66A;
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right:  4px;
+    width: 30px;
+}
+
+/* Body */
+.OP2{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.OP2 img{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    height: 170px;
+    width: 100px;
+}
+.Opciones{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.Opciones:hover{
+    background-color: #7DA66A;
+}
+.Coraz{
+    font-size: 25px;
+}
+.Opciones svg{
+    width: 30px;
+}
+.Fav{
+    display: none;
+}
+.Fav1:hover{
+    fill: rgb(255, 0, 0);
+}
+.Oj:hover{
+    fill: blue;
+}
+.Nulo{
+    margin-top: 50px;
+    text-align: center;
+}
+.Nulo button{
+    margin-top: 40px;
+}
