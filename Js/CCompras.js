@@ -3,12 +3,12 @@ $(document).ready(function() {
         $('.PrimeroDerecha').toggleClass("col-md-8", false);
 
     $('#Cm3').hide();
-        //Redireccionar botones
+    //Redireccionar botones
         $("#Fav").click(function() {
             window.location.href = "ProductoFavorito.html";
         });
 
-        //Agregar Comentario
+    //Agregar Comentario
         $("#BtnAgregar").click(function() {
             var Correo = $("#Correo").val();
             var Nombre = $("#Nombre").val();
@@ -36,11 +36,10 @@ $(document).ready(function() {
         });
         $(".slides").on("click", "#Eliminar", function() {
             $(this).closest("#Cm3").remove();
-            $('#Cm3').hide();
             $('#Cm2').show();
         });
 });
-
+// Almacenamiento LocalStorage
   function botonClicado() {
     if(localStorage.getItem('DivGuardado') === null){
         $('.PrimeroIzquierda').toggleClass("col-md-4", true);

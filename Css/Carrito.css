@@ -164,7 +164,7 @@ article{
     margin-bottom: 10px;
 }
 /* Carrusel Comentarios */
-.slider-container {
+.Comentarios-container {
     position: relative;
     max-width: 1000px;
     margin: auto;
@@ -174,7 +174,7 @@ article{
     text-align: center;
     border: 1px solid black;
   }
-  .slider-container h4{
+  .Comentarios-container h4{
     color: #7DA66A;
   }
 
@@ -190,6 +190,7 @@ article{
     margin-right: 40px;
   }
   #Cm2{
+    margin-top: 20px;
     color: #7DA66A;
   }
   .slider-nav {
@@ -269,8 +270,12 @@ footer img{
 }
 .tr a{
     font-size: 18px;
-
     color: #7DA66A;
+    text-decoration-color: #000000;
+}
+.tr a:hover{
+    font-size: 18px;
+    color: #000000;
     text-decoration-color: #000000;
 }
 .tr div{
