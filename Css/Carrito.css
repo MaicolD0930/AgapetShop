@@ -124,12 +124,6 @@ article{
 #InfoP{
     display: none;
 }
-.Comentarios{
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid black;
-    overflow: hidden;
-}
 .Cm1{
     margin-left: 150px;
     margin-right: 150px;
@@ -170,31 +164,54 @@ article{
     margin-bottom: 10px;
 }
 /* Carrusel Comentarios */
-.Comentarios ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: Comentarios 20s infinite alternate ease-in-out;
-}
-.Comentarios li{
-    width: 1190px;
-    list-style: none;
+.slider-container {
     position: relative;
-}
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  .slider-container h4{
+    color: #7DA66A;
+  }
 
-@keyframes Comentarios {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 100%
+  }
+  .slide p{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #Cm2{
+    color: #7DA66A;
+  }
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .slider-nav button{
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 1000px;
+  }
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
+  .slider-nav button:hover {
+    background-color: #555;
+    color: white;
+  }
 
 
 /* FOOTER */

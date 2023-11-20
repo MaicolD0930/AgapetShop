@@ -8,6 +8,7 @@ $(document).ready(function() {
             window.location.href = "ProductoFavorito.html";
         });
 
+        //Agregar Comentario
         $("#BtnAgregar").click(function() {
             var Correo = $("#Correo").val();
             var Nombre = $("#Nombre").val();
@@ -17,14 +18,13 @@ $(document).ready(function() {
                 $('#Cm2').hide();
                 $('#Cm3').show();
                 
-                var Li =$("<li>");
-                var Com =Li.append($('<div class="Cm3">'));
+                var Com =$('<div id="Cm3">');
                 Com.append($("<h6>").text("Tu Comentario: " +Nombre).val(Nombre));
                 Com.append($("<p>").text(Mensaje).val(Mensaje));
                 Com.append($('<button class="btn btn-danger" id="Eliminar">Eliminar comentario</button>').
                 css("text-align", "center").val("Boton"));
         
-                $(".Comentarios ul .cc3").append(Com);
+                $(".slides #Cm1").append(Com);
     
                 $("#Correo").val("");
                 $("#Nombre").val("");
@@ -34,8 +34,8 @@ $(document).ready(function() {
                 alert("Por favor, complete todos los campos.");
             }
         });
-        $(".Comentarios").on("click", "#Eliminar", function() {
-            $(this).closest("li").remove();
+        $(".slides").on("click", "#Eliminar", function() {
+            $(this).closest("#Cm3").remove();
             $('#Cm3').hide();
             $('#Cm2').show();
         });
@@ -73,3 +73,18 @@ $(document).ready(function() {
     }
   }
   $('.Fav').click(botonClicado);
+
+
+//Funcionamiento Carrito
+  let currentSlide = 0;
+  function MostrarSeleccionado(index) {
+    const slides = document.querySelector('.slides');
+    const slideWidth = document.querySelector('.slide').clientWidth;
+    currentSlide = index;
+    slides.style.transform = `translateX(${-slideWidth * index}px)`;
+  }
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % 4;
+    MostrarSeleccionado(currentSlide);
+  }
+  setInterval(nextSlide, 5000);
