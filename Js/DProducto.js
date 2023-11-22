@@ -5,7 +5,10 @@ $(document).ready(function() {
         $("#Fav").click(function() {
             window.location.href = "ProductoFavorito.html";
         });
-
+        var NombreP = $("#h8");
+        var ContenidoNombre = NombreP.text();
+        $('#NombreProducto').text(ContenidoNombre);
+        
     //Funcionamiento Carrito
   let SlideActual = 0;
   function SlideSeleccionado(index) {

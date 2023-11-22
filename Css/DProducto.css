@@ -90,6 +90,8 @@ span{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .Opciones{
     margin-bottom: 10px;
@@ -189,23 +191,29 @@ span{
 
   #Next{
     position: absolute;
-    top: 420px;
-    left: 340px;
+    top: 480px;
+    left: 334px;
     border: none;
     background: none;
   }
+  #Next:hover{
+    color: #7DA66A;
+  }
   #Next i{
-    font-size: 21px;
+    font-size: 24px;
   }
   #Anterior{
     position: absolute;
-    top: 420px;
+    top: 480px;
     left: 147px;
     border: none;
     background: none;
   }
+  #Anterior:hover{
+    color: #7DA66A;
+  }
   #Anterior i{
-    font-size: 20px;
+    font-size: 24px;
   }
 
 
