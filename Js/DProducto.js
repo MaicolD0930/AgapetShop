@@ -41,6 +41,7 @@ $(document).ready(function() {
    // Almacenamiento LocalStorage
   function ProductoFavorito() {
     if(localStorage.getItem('DivGuardado') === null){
+        $('.P1').show();
         $('.P2').hide();
         $('.P3').hide();
         $('.P4').hide();
@@ -60,6 +61,7 @@ $(document).ready(function() {
         $('.Oj').hide();
     }else{
         if(localStorage.getItem('DivGuardado1') === null){
+            $('.P1').show();
             $('.P2').hide();
             $('.P3').hide();
             $('.P4').hide();
