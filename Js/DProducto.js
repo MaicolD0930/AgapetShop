@@ -41,6 +41,7 @@ $(document).ready(function() {
    // Almacenamiento LocalStorage
   function ProductoFavorito() {
     if(localStorage.getItem('DivGuardado') === null){
+        SlideSeleccionado(0);
         $('.P1').show();
         $('.P2').hide();
         $('.P3').hide();
@@ -61,6 +62,7 @@ $(document).ready(function() {
         $('.Oj').hide();
     }else{
         if(localStorage.getItem('DivGuardado1') === null){
+            SlideSeleccionado(0);
             $('.P1').show();
             $('.P2').hide();
             $('.P3').hide();
