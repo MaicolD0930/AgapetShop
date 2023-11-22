@@ -83,49 +83,14 @@ span{
     color: #000000;
 }
 
-
-/* Body */
-.container{
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.titu3{
+/* BODY */
+.DetalleBox{
     background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 40px;
-    width: 70%; 
-}
-.OP2{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 40px;
-}
-#PrimeroIzquierda{
-    border-right: 1px solid black;
-}
-#PrimeroIzquierda img{
-    margin-top: 10px;
-    border-bottom: 1px solid black;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 80%;
     margin-left: 10%;
-    height: 240px;
-    width: 150px;
-    display: inline-block;
+    margin-right: 10%;
 }
-#PrimeroDerecha{
-    text-align: center;
-}
-#PrimeroDerecha h6{
-    margin-top: 6%;
-    margin-bottom: 6%;
-}
-
-#PrimeroDerecha p{
-    margin-bottom: 5%;
-}
-
 .Opciones{
     margin-bottom: 10px;
     border: 1px solid black;
@@ -141,10 +106,7 @@ span{
 .Opciones svg{
     width: 30px;
 }
-.Fav{
-    display: none;
-}
-.Fav1:hover{
+.Fav:hover{
     fill: rgb(255, 0, 0);
 }
 .Oculto:hover{
@@ -153,38 +115,100 @@ span{
 .Oj:hover{
     fill: blue;
 }
-.Nulo{
-    margin-top: 50px;
-    text-align: center;
-}
-.Nulo1{
-    margin-left: 20%;
-}
-.Nulo button{
+.Cont1 img{
+    border: 1px solid black;
+    border-radius: 10px;
     margin-top: 40px;
-    margin-bottom: 40px;
-}
-#CargarContenido{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 40px;
-}
-#CargarContenido1{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 40px;
-}
-#CargarContenido1 #PrimeroIzquierda img{
-    margin-top: 10px;
-    border-bottom: 1px solid black;
-    margin-bottom: 20px;
-    margin-left: 10%;
-    height: 240px;
+    margin-left: -70px;
+    height: 250px;
     width: 150px;
-    display: inline-block;
+    margin-bottom: 40px;
+
 }
+.Conte img{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: -70px;
+    height: 250px;
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+.Comentarios-container1 {
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .slides1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide1 {
+    min-width: 100%
+  }
+  #Cm2{
+    margin-top: 20px;
+    color: #7DA66A;
+  }
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .slider-nav button{
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 1000px;
+  }
+
+  .slider-nav button:hover {
+    background-color: #555;
+    color: white;
+  }
+  .PrimeroDerecha h6{
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+  }
+  #Precio{
+    margin-bottom: 40px;
+    margin-left: 230px;
+    margin-top: 40px;
+  }
+  .Botones{
+    margin-left: 210px;
+  }
+
+
+
+  #Next{
+    position: absolute;
+    top: 420px;
+    left: 340px;
+    border: none;
+    background: none;
+  }
+  #Next i{
+    font-size: 21px;
+  }
+  #Anterior{
+    position: absolute;
+    top: 420px;
+    left: 147px;
+    border: none;
+    background: none;
+  }
+  #Anterior i{
+    font-size: 20px;
+  }
+
+
 
 /* FOOTER */
 footer{
@@ -241,8 +265,12 @@ footer img{
 }
 .tr a{
     font-size: 18px;
-
     color: #7DA66A;
+    text-decoration-color: #000000;
+}
+.tr a:hover{
+    font-size: 18px;
+    color: #000000;
     text-decoration-color: #000000;
 }
 .tr div{

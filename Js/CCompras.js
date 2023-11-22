@@ -1,4 +1,7 @@
 $(document).ready(function() {
+        $('.P2').css("display", "none");
+        $('.P3').css("display", "none");
+        $('.P4').css("display", "none");
         $('.PrimeroIzquierda').toggleClass("col-md-4", false);
         $('.PrimeroDerecha').toggleClass("col-md-8", false);
 
@@ -40,7 +43,7 @@ $(document).ready(function() {
         });
 });
 // Almacenamiento LocalStorage
-  function botonClicado() {
+  function ProductoFavorito() {
     if(localStorage.getItem('DivGuardado') === null){
         $('.PrimeroIzquierda').toggleClass("col-md-4", true);
         $('.PrimeroDerecha').toggleClass("col-md-8", true);
@@ -71,8 +74,28 @@ $(document).ready(function() {
         }   
     }
   }
-  $('.Fav').click(botonClicado);
+  $('.Fav').click(ProductoFavorito);
 
+
+  /* Detalle del Producto */
+  function DetalleProducto() {
+    $('.P2').css("display", "block");
+    $('.P3').css("display", "block");
+    $('.P4').css("display", "block");
+    $('.PrimeroIzquierda').toggleClass("col-md-4", true);
+    $('.PrimeroDerecha').toggleClass("col-md-8", true);
+    $('.Fav1').hide();
+    $('.Oj').hide();
+    var Btn = $(this);
+    var PDiv = Btn.closest('div');
+    var PDetalle = PDiv.html();
+    localStorage.setItem('DetalleProducto', PDetalle);
+    window.location.href = "DetalleProducto.html";
+    $('.Fav1').addClass("Oculto");
+    $('.PrimeroIzquierda').toggleClass("col-md-4", false);
+    $('.PrimeroDerecha').toggleClass("col-md-8", false);
+  }
+$('.Oj').click(DetalleProducto);
 
 //Funcionamiento Carrito
   let currentSlide = 0;

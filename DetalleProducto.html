@@ -7,7 +7,7 @@
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link
   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
-  <link rel="stylesheet" href="Css/PFav.css">
+  <link rel="stylesheet" href="Css/DProducto.css">
   <link rel="icon" href="Icon/ICONO.ico"> 
   <title>Productos Favoritos</title>
 </head>
@@ -66,25 +66,27 @@
     <div class="Ubi input-group mb-3">
       <a href="CarritoCompras.html">Carrito de compras </a>
       <a class="Separador"> / </a>
-      <a href="#"> Productos Favoritos</a>
+      <a > Detalle Producto</a>
+      <a class="Separador"> / </a>
+      <a id="NombreProducto">. . .</a>
     </div>
     
 
-    <div class="container">
+
+
+    <div class="DetalleBox">
         <div class="main2 row titu3">
-            <div class="Nulo">
-                <h4>Actualmente Usted no tiene productos favoritos</h4>
-                <button id="AFav" class="btn btn-success">¡Agregar Productos!</button>
-            </div>  
-
             <div class="OP2 row col-md-12" id="CargarContenido">
-            </div>
 
+            </div>
+            <div>
+                <button id="Anterior"><i class="bi bi-arrow-left-circle"></i></button>
+                <button id="Next"><i class="bi bi-arrow-right-circle"></i></button>
+            </div>
         </div>
-        <div class="Nulo1">
-          <button id="DeleteAll" class="btn btn-danger">¡Eliminar todos los productos de Favoritos!</button>
-      </div>    
     </div>
+
+
 
 
     <footer class="col-md-12">
@@ -124,6 +126,6 @@
       </footer>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
 crossorigin="anonymous"></script>
-<script src="Js/PFavorito.js"></script>
+<script src="Js/DProducto.js"></script>
 </body>
 </html>
