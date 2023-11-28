@@ -219,6 +219,7 @@ span{
 
 
 /* FOOTER */
+/* FOOTER */
 footer{
     background-color: white;
     margin-top: 40px;
@@ -267,7 +268,7 @@ footer img{
     
 }
 .tr h4{
-    margin-left: 70px;
+    margin-left: 10px;
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -282,6 +283,6 @@ footer img{
     text-decoration-color: #000000;
 }
 .tr div{
-    margin-left: 70px;
-    margin-top: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
 }

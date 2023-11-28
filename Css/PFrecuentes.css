@@ -2,6 +2,9 @@ body{
     background-color: #7DA66A;
 }
 /* Cabecera */
+header{
+    margin-bottom: -16px;
+}
 .ImagenTitulo{
     background-color: white;
     text-align: center;
@@ -66,48 +69,21 @@ span{
     width: 30px;
 }
 
+
 /* BODY */
-.QuienesS{
-    margin-top: 40px;
+.Gato img{
+    width: 100%;
 }
-.Somos{
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: white;
-    padding: 50px 50px 50px 50px;
-    border-radius: 10px;
+.GatoP{
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    font-size: 25px;
 }
-.Somos h2{
-    text-align: center;
-    margin-bottom: 40px;
-    color: #7DA66A;
-}
-.SobreNosotros{
-    text-align: center;
-}
-.SobreNosotros h4{
-    margin-left: 37%;
-    width: 300px;
-    height: 40px;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-.Contenido{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-.Contenido img{
-    width: 250px;
-    height: 300px;
-    border-bottom: 1px solid black;
-    border-radius: 10px;
-}
-.Nosotros{
-    display: inline-flex;
+.Ubi{
+    position: absolute;
+    top: 320px;
+    left: 50px;
 }
 
 
@@ -161,7 +137,7 @@ footer img{
     
 }
 .tr h4{
-    margin-left: 70px;
+    margin-left: 10px;
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -176,6 +152,6 @@ footer img{
     text-decoration-color: #000000;
 }
 .tr div{
-    margin-left: 70px;
-    margin-top: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
