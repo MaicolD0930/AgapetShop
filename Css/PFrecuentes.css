@@ -85,7 +85,54 @@ span{
     top: 320px;
     left: 50px;
 }
-
+.Perguntas{
+    background-color: white;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+#p1{
+    margin-left: 60px;
+}
+#p2{
+    margin-left: 60px;
+    margin-right: 150px;
+}
+#p3{
+    margin-left: 60px;
+    margin-right: 150px;
+}
+#p4{
+    margin-left: 60px;
+    margin-right: 150px;
+}
+#p5{
+    margin-left: 60px;
+}
+#p6{
+    margin-left: 60px;
+    margin-right: 150px;
+}
+.Boton{
+    border: none;
+    background-color: white;
+    margin-top: 30px;
+}
+.Pagos{
+    margin-left: 30px;
+    display: inline-flex;
+    margin-top: 40px;
+}
+.Pagos h2{
+    margin-left: 20px;
+}
+.Pagos i{
+    font-size: 30px;
+    color: #7DA66A;
+}
+h5{
+    margin-left: 20px;
+    color: #7DA66A;
+}
 
 
 /* FOOTER */
