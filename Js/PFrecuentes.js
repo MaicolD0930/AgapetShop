@@ -6,6 +6,11 @@ $(document).ready(function() {
     $("#p5").hide();
     $("#p6").hide();
 
+        //Redireccionar botones
+        $("#Fav").click(function() {
+            window.location.href = "ProductoFavorito.html";
+        });
+        
     $('.Boton').click(function() {
         $('.Boton').removeClass('seleccionado');
         $(this).addClass('seleccionado');
