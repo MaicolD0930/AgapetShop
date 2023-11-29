@@ -121,7 +121,56 @@ aside img{
 }
 
 
+/* Carrusel Comentarios */
+.Comentarios-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  .Comentarios-container h4{
+    color: #7DA66A;
+  }
 
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 100%
+  }
+  .slide p{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #Cm2{
+    margin-top: 20px;
+    color: #7DA66A;
+  }
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .slider-nav button{
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 1000px;
+  }
+
+  .slider-nav button:hover {
+    background-color: #555;
+    color: white;
+  }
 
 
 
