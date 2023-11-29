@@ -2,6 +2,35 @@ body{
     background-color: #7DA66A;
 }
 /* Cabecera */
+.he .Oscuro{
+    color: white;
+}
+.he .Oscuro:hover{
+    background-color: rgb(255, 255, 255);
+    color: #7DA66A;
+}
+#Luna{
+    border: none;
+    background-color: white;
+}
+.Luna{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: black;
+    font-size: 30px;
+}
+#Sol{
+    border: none;
+    background-color: black;
+}
+.Sol{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+}
 .ImagenTitulo{
     background-color: white;
     text-align: center;
