@@ -60,8 +60,7 @@ $(document).ready(function() {
     $(".ImagenTitulo").css("background-color", "black");
     $(".Top").css("background-color", "black");
     $(".Top a").addClass("Oscuro");
-    $(".iconos").css("background-color", "black");
-    $(".iconos svg").css("fill", "white");
+    $(".iconos").addClass("Oscuroo");
     //Body
     $(".OP2").css("background-color", "black");
     $(".OP2").css("border", "1px solid white");
@@ -69,6 +68,8 @@ $(document).ready(function() {
     $(".OP2 p").css("color", "white");
     $(".Filtro select").css("background-color", "black");
     $(".Filtro select").css("color", "white");
+    $("#Next i").css("color", "white");
+    $("#Anterior i").css("color", "white");
     //Footer
     $("footer").css("background-color", "black");
     $("footer input").css("border", "1px solid white");
@@ -94,8 +95,7 @@ $(document).ready(function() {
     $(".Top").css("background-color", "white");
     $(".Top a").removeClass("Oscuro");
     $(".Top a").css("color", "#7DA66A");
-    $(".iconos").css("background-color", "white");
-    $(".iconos svg").css("fill", "black");
+    $(".iconos").removeClass("Oscuroo");
     //Body
     $(".OP2").css("background-color", "white");
     $(".OP2").css("border", "1px solid black");
@@ -103,6 +103,9 @@ $(document).ready(function() {
     $(".OP2 p").css("color", "black ");
     $(".Filtro select").css("background-color", "white");
     $(".Filtro select").css("color", "black");
+    $("#Next i").css("color", "#7DA66A");
+    $("#Anterior i").css("color", "#7DA66A");
+    
     //Footer
     $("footer").css("background-color", "white");
     $("footer input").css("border", "1px solid black");

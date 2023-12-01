@@ -63,9 +63,9 @@ $(document).ready(function() {
       $('#Sol').hide();
     }
     else{
-      $(".OP2 h6").css("color", "white");
-      $(".OP2 p").css("color", "white");
-      $('#Luna').hide();
+      $(".OP2 h6").css("color", "black");
+      $(".OP2 p").css("color", "black");
+      $('#Luna').show();
     }
 
 
@@ -79,8 +79,7 @@ $(document).ready(function() {
     $(".ImagenTitulo").css("background-color", "black");
     $(".Top").css("background-color", "black");
     $(".Top a").addClass("Oscuro");
-    $(".iconos").css("background-color", "black");
-    $(".iconos svg").css("fill", "white");
+    $(".iconos").addClass("Oscuroo");
     //Body
     $(".OP2").css("background-color", "black");
     $(".OP2").css("border", "1px solid white");
@@ -113,8 +112,7 @@ $(document).ready(function() {
     $(".Top").css("background-color", "white");
     $(".Top a").removeClass("Oscuro");
     $(".Top a").css("color", "#7DA66A");
-    $(".iconos").css("background-color", "white");
-    $(".iconos svg").css("fill", "black");
+    $(".iconos").removeClass("Oscuroo");
     //Body
     $(".OP2").css("background-color", "white");
     $(".OP2").css("border", "1px solid black");

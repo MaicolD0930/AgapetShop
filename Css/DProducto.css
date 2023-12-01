@@ -111,7 +111,12 @@ span{
     margin: 0 5px;
     color: #000000;
 }
-
+.Oscuroo{
+    background-color: black;
+}
+.Oscuroo svg{
+    fill: white;
+}
 /* BODY */
 .DetalleBox{
     background-color: white;

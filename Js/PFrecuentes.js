@@ -19,6 +19,7 @@ $(document).ready(function() {
         $(".iconos").css("background-color", "black");
         $(".iconos svg").css("fill", "white");
         //Body
+        $("h6").css("color", "white");
         $(".OP2").css("background-color", "black");
         $(".OP2").css("border", "1px solid white");
         $(".OP2 h6").css("color", "white");
@@ -29,7 +30,6 @@ $(document).ready(function() {
         $(".Pergunta h5").css("color", "white");
         $(".Pergunta h6").css("color", "white");
         $(".Pregunta p").css("color", "white");
-        
         //Footer
         $("footer").css("background-color", "black");
         $("footer input").css("border", "1px solid white");
@@ -58,6 +58,7 @@ $(document).ready(function() {
         $(".iconos").css("background-color", "white");
         $(".iconos svg").css("fill", "black");
         //Body
+        $("h6").css("color", "black");
         $(".OP2").css("background-color", "white");
         $(".OP2").css("border", "1px solid black");
         $(".OP2 h6").css("color", "black");

@@ -94,6 +94,12 @@ span{
     padding-right:  4px;
     width: 30px;
 }
+.Oscuroo{
+    background-color: black;
+}
+.Oscuroo svg{
+    fill: white;
+}
 
 
 
