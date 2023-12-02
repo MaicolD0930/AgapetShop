@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var Estado;
   $('#Sol').hide();
     $('#PrimeroIzquierda').toggleClass("col-md-4", true);
     //Cargar LocalStorage
@@ -57,20 +58,17 @@ $(document).ready(function() {
 
 
     var Colo = localStorage.getItem('Color');
-    if(Colo === "Oscuro"){
-      $(".OP2 h6").css("color", "black");
-      $(".OP2 p").css("color", "black ");
-      $('#Sol').hide();
-    }
-    else{
-      $(".OP2 h6").css("color", "black");
-      $(".OP2 p").css("color", "black");
-      $('#Luna').show();
-    }
+    if(Colo==="Oscuro"){
+     ModoOscuro();
+   }
+   else{
+     ModoLuz();
+   }
 
 
-   $('#Luna').click(function() {
-    var Estado = "Oscuro";
+   $('#Luna').click(ModoOscuro);
+   function ModoOscuro() {
+    Estado = "Oscuro";
     localStorage.setItem('Color', Estado);
     $('body').css("background-color", "#3e423d");
     //Header
@@ -87,6 +85,8 @@ $(document).ready(function() {
     $(".OP2 p").css("color", "white");
     $(".Filtro select").css("background-color", "black");
     $(".Filtro select").css("color", "white");
+    $(".titu3").css("background-color", "black");
+    $(".Nulo h4").css("color", "white");
     //Footer
     $("footer").css("background-color", "black");
     $("footer input").css("border", "1px solid white");
@@ -97,11 +97,10 @@ $(document).ready(function() {
     $("footer span").css("background-color", "black");
     $(".sc").css("border-left", "1px solid white");
     $(".sc").css("border-right", "1px solid white");
-    
-
-  });
-  $('#Sol').click(function() {
-    var Estado = "Luz";
+  }
+  $('#Sol').click(ModoLuz);
+  function ModoLuz() {
+    Estado = "Luz";
     localStorage.setItem('Color', Estado);
     $('body').css("background-color", "#7DA66A");
     //Header
@@ -120,6 +119,8 @@ $(document).ready(function() {
     $(".OP2 p").css("color", "black ");
     $(".Filtro select").css("background-color", "white");
     $(".Filtro select").css("color", "black");
+    $(".titu3").css("background-color", "white");
+    $(".Nulo h4").css("color", "black");
     //Footer
     $("footer").css("background-color", "white");
     $("footer input").css("border", "1px solid black");
@@ -130,7 +131,7 @@ $(document).ready(function() {
     $("footer span").css("background-color", "white");
     $(".sc").css("border-left", "1px solid black");
     $(".sc").css("border-right", "1px solid black");
-  });
+  }
     
 
     //Redirigir

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var Estado;
   $('#Sol').hide();
     var DProducto = localStorage.getItem('DetalleProducto');
     $('#CargarContenido').html(DProducto);
@@ -37,21 +38,20 @@ $(document).ready(function() {
    function Anterior() {
     AnteriorSlide();
    }
+
+
+
    var Colo = localStorage.getItem('Color');
-    if(Colo === "Oscuro"){
-      $(".OP2 h6").css("color", "black");
-      $(".OP2 p").css("color", "black ");
-      $('#Luna').show();
-    }
-    else{
-      $(".OP2 h6").css("color", "black");
-      $(".OP2 p").css("color", "black ");
-      $('#Luna').show();
-    }
+   if(Colo==="Oscuro"){
+    ModoOscuro();
+  }
+  else{
+    ModoLuz();
+  }
 
-
-   $('#Luna').click(function() {
-    var Estado = "Oscuro";
+  $('#Luna').click(ModoOscuro);
+  function ModoOscuro() {
+    Estado = "Oscuro";
     localStorage.setItem('Color', Estado);
     $('body').css("background-color", "#3e423d");
     //Header
@@ -82,9 +82,10 @@ $(document).ready(function() {
     $(".sc").css("border-right", "1px solid white");
     
 
-  });
-  $('#Sol').click(function() {
-    var Estado = "Luz";
+  }
+  $('#Sol').click(ModoLuz);
+  function ModoLuz() {
+    Estado = "Luz";
     localStorage.setItem('Color', Estado);
     $('body').css("background-color", "#7DA66A");
     //Header
@@ -116,7 +117,7 @@ $(document).ready(function() {
     $("footer span").css("background-color", "white");
     $(".sc").css("border-left", "1px solid black");
     $(".sc").css("border-right", "1px solid black");
-  });
+  }
   
 
    // Almacenamiento LocalStorage

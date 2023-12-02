@@ -1,14 +1,22 @@
 $(document).ready(function() {
   var Estado;
-        $('#Sol').hide();
+  $('#Sol').hide();
+  var Colo = localStorage.getItem('Color');
+  if(Colo==="Oscuro"){
+   ModoOscuro();
+ }
+ else{
+   ModoLuz();
+ }
+
         $('.P2').css("display", "none");
         $('.P3').css("display", "none");
         $('.P4').css("display", "none");
         $('.PrimeroIzquierda').toggleClass("col-md-4", false);
         $('.PrimeroDerecha').toggleClass("col-md-8", false);
 
-
-    $('#Luna').click(function() {
+    $('#Luna').click(ModoOscuro);
+    function ModoOscuro() {
       Estado = "Oscuro";
       localStorage.setItem('Color', Estado);
       $('body').css("background-color", "#3e423d");
@@ -36,10 +44,9 @@ $(document).ready(function() {
       $("footer span").css("background-color", "black");
       $(".sc").css("border-left", "1px solid white");
       $(".sc").css("border-right", "1px solid white");
-      
-
-    });
-    $('#Sol').click(function() {
+    }
+    $('#Sol').click(ModoLuz);
+    function ModoLuz() {
       Estado = "Luz";
       localStorage.setItem('Color', Estado);
       $('body').css("background-color", "#7DA66A");
@@ -69,7 +76,7 @@ $(document).ready(function() {
       $("footer span").css("background-color", "white");
       $(".sc").css("border-left", "1px solid black");
       $(".sc").css("border-right", "1px solid black");
-    });
+    }
 
     $('#Cm3').hide();
     //Redireccionar botones

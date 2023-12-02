@@ -37,7 +37,16 @@ $(document).ready(function() {
         });
 
 
-        $('#Luna').click(function() {
+        var Colo = localStorage.getItem('Color');
+        if(Colo==="Oscuro"){
+         ModoOscuro();
+       }
+       else{
+         ModoLuz();
+       }
+
+       $('#Luna').click(ModoOscuro);
+       function ModoOscuro() {
             var Estado = "Oscuro";
             localStorage.setItem('Color', Estado);
             $('body').css("background-color", "#3e423d");
@@ -47,8 +56,7 @@ $(document).ready(function() {
             $(".ImagenTitulo").css("background-color", "black");
             $(".Top").css("background-color", "black");
             $(".Top a").addClass("Oscuro");
-            $(".iconos").css("background-color", "black");
-            $(".iconos svg").css("fill", "white");
+            $(".iconos").addClass("Oscuroo");
             //Body
             $(".OP2").css("background-color", "black");
             $(".OP2").css("border", "1px solid white");
@@ -69,8 +77,9 @@ $(document).ready(function() {
             $(".sc").css("border-right", "1px solid white");
             
         
-          });
-          $('#Sol').click(function() {
+          }
+          $('#Sol').click(ModoLuz);
+          function ModoLuz() {
             var Estado = "Luz";
             localStorage.setItem('Color', Estado);
             $('body').css("background-color", "#7DA66A");
@@ -82,8 +91,7 @@ $(document).ready(function() {
             $(".Top").css("background-color", "white");
             $(".Top a").removeClass("Oscuro");
             $(".Top a").css("color", "#7DA66A");
-            $(".iconos").css("background-color", "white");
-            $(".iconos svg").css("fill", "black");
+            $(".iconos").removeClass("Oscuroo");
             //Body
             $(".OP2").css("background-color", "white");
             $(".OP2").css("border", "1px solid black");
@@ -92,7 +100,6 @@ $(document).ready(function() {
             $(".Comentarios-container").css("background-color", "white");
             $(".Comentarios-container h6").css("color", "black");
             $(".Comentarios-container p").css("color", "black");
-            Comentarios
             //Footer
             $("footer").css("background-color", "white");
             $("footer input").css("border", "1px solid black");
@@ -103,7 +110,7 @@ $(document).ready(function() {
             $("footer span").css("background-color", "white");
             $(".sc").css("border-left", "1px solid black");
             $(".sc").css("border-right", "1px solid black");
-          });
+          }
 });
 
 

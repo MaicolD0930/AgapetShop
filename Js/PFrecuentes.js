@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var Estado;
     $("#p1").hide();
     $("#p2").hide();
     $("#p3").hide();
@@ -6,8 +7,20 @@ $(document).ready(function() {
     $("#p5").hide();
     $("#p6").hide();
     $('#Sol').hide();
-    $('#Luna').click(function() {
-        var Estado = "Oscuro";
+
+
+        $('#Sol').hide();
+        var Colo = localStorage.getItem('Color');
+        if(Colo==="Oscuro"){
+            ModoOscuro();
+        }
+        else{
+            ModoLuz();
+        }
+
+        $('#Luna').click(ModoOscuro);
+        function ModoOscuro() {
+            Estado = "Oscuro";
         localStorage.setItem('Color', Estado);
         $('body').css("background-color", "#3e423d");
         //Header
@@ -16,8 +29,7 @@ $(document).ready(function() {
         $(".ImagenTitulo").css("background-color", "black");
         $(".Top").css("background-color", "black");
         $(".Top a").addClass("Oscuro");
-        $(".iconos").css("background-color", "black");
-        $(".iconos svg").css("fill", "white");
+        $(".iconos").addClass("Oscuroo");
         //Body
         $("h6").css("color", "white");
         $(".OP2").css("background-color", "black");
@@ -40,11 +52,10 @@ $(document).ready(function() {
         $("footer span").css("background-color", "black");
         $(".sc").css("border-left", "1px solid white");
         $(".sc").css("border-right", "1px solid white");
-        
-    
-      });
-      $('#Sol').click(function() {
-        var Estado = "Luz";
+      }
+      $('#Sol').click(ModoLuz);
+      function ModoLuz() {
+        Estado = "Luz";
         localStorage.setItem('Color', Estado);
         $('body').css("background-color", "#7DA66A");
         //Header
@@ -55,8 +66,7 @@ $(document).ready(function() {
         $(".Top").css("background-color", "white");
         $(".Top a").removeClass("Oscuro");
         $(".Top a").css("color", "#7DA66A");
-        $(".iconos").css("background-color", "white");
-        $(".iconos svg").css("fill", "black");
+        $(".iconos").removeClass("Oscuroo");
         //Body
         $("h6").css("color", "black");
         $(".OP2").css("background-color", "white");
@@ -79,7 +89,7 @@ $(document).ready(function() {
         $("footer span").css("background-color", "white");
         $(".sc").css("border-left", "1px solid black");
         $(".sc").css("border-right", "1px solid black");
-      });
+      }
 
         //Redireccionar botones
         $("#Fav").click(function() {
