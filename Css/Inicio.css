@@ -1,6 +1,37 @@
 body{
     background-color: #7DA66A;
 }
+/* Usuario */
+.Sesion{
+    display: none;
+}
+.Close{
+    display: none;
+}
+.Sesion1{
+    background-color: white;
+    position: absolute;
+    list-style-type: none;
+    width: 400px;
+    border: 1px solid black;
+}
+.Sesion1 p{
+    margin-top: 10px;
+    color: white;
+}
+.Sesion1 button{
+    width: 90%;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#CargarNombre{
+    margin-left: 10px;
+}
+.Crear{
+    margin-top: 10px;
+}
+
 /* Cabecera */
 .he .Oscuro{
     color: white;
@@ -36,7 +67,6 @@ body{
     text-align: center;
 }
 .ImagenTitulo img{
-
     content:center;
     height: 130px;
 }

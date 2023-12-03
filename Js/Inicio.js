@@ -1,9 +1,34 @@
 $(document).ready(function() {
+    //Validar si esta registrado
+    var registrado = localStorage.getItem('Registrado');
+    $('#Sesion').click(MostrarSesion);
+    function MostrarSesion() {
+      if(registrado==="Si"){
+        $(".Sesion").toggle();
+        var NombreG = localStorage.getItem('NombreG');
+        $("#CargarNombre").html(NombreG);
+      }else{
+        $(".Close").toggle();
+      }
+    }
+    $('#CerrarS').click(CerrarSesion);
+    //Cerrar Sesion
+    function CerrarSesion() {
+      registrado = "No";
+      localStorage.setItem('Registrado', registrado);
+      $(".Sesion").toggle();
+    }
+    $("#CrearC").click(function() {
+      window.location.href = "reserva.html";
+  });
+
+
     $('#Sol').hide();
     //Redireccionar botones
     $("#Fav").click(function() {
         window.location.href = "ProductoFavorito.html";
     });
+
 
         //Agregar Comentario
         $("#BtnAgregar").click(function() {
