@@ -14,10 +14,11 @@ body{
     list-style-type: none;
     width: 400px;
     border: 1px solid black;
+    color: black;
 }
 .Sesion1 p{
     margin-top: 10px;
-    color: white;
+    color: black;
 }
 .Sesion1 button{
     width: 90%;

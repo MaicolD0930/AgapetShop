@@ -13,9 +13,29 @@
             <h1 id="title">¡Bienvenido a Agapet!</h1>
             <form>
                 <div class="input-group">
-                    <div class="input-field" id="nameInput">
-                        <i class="fas fa-user"></i>
-                        <input id="NombreImput" type="text" placeholder="Nombre">
+                    <div class="Juntar" id="nameInput">
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input id="NombreImput" type="text" placeholder="Nombre">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input id="ApellidoImput" type="text" placeholder="Apellidos">
+                        </div>
+                    </div>
+                    <div class="Juntar" id="nameInput">
+                        <div class="input-field" id="direccionInput">
+                            <i class="fas fa-envelope"></i>
+                            <input id="DireccionImput" type="text" placeholder="Direccion">
+                        </div>
+                        <div class="input-field" id="cedulaInput">
+                            <i class="fas fa-envelope"></i>
+                            <input id="CedulaImput" type="text" placeholder="Cedula">
+                        </div>
+                    </div>
+                    <div class="input-field" id="contactoInput">
+                        <i class="fas fa-envelope"></i>
+                        <input id="NumeroImput" type="text" placeholder="Numero de contacto">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
@@ -23,18 +43,17 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input id="ContraseñaImput" type="password" placeholder="Contraseña">
                     </div>
                     <p id="forgotPassword">¿Olvidaste tu contraseña?<a href="#">Haz clic aquí</a></p>
-                </div>
-                <div class="btn-field">
-                    <button id="signUp" type="button">Regístrate</button>
-                    <button id="signIn" type="button" class="disable">Iniciar Sesión</button>
+                    <div class="btn-field">
+                        <button id="signUp" type="button">Regístrate</button>
+                        <button id="signIn" type="button" class="disable">Iniciar Sesión</button>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="Js/script.js"></script>
