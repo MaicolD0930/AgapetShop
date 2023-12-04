@@ -1,0 +1,387 @@
+[
+    {
+        "id": "accesorio-01",
+        "titulo": "Accesorio 01",
+        "imagen": "img/Accesorios/Acesorio1.jpg",
+        "descripcion":"Haz que tu mascota siempre se vea elegante, compra este hermoso moño disponible en varios colores. No te quedes sin el tuyo",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "accesorio-02",
+        "titulo": "Accesorio 02",
+        "imagen": "img/Accesorios/Acesorio2.jpg",
+        "descripcion":"Hermosa camisa para tu mascota, tu hijo perruno se merece lo mejor",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 7000
+    },
+    {
+        "id": "accesorio-03",
+        "titulo": "Accesorio 03",
+        "imagen": "img/Accesorios/Acesorio3.jpg",
+        "descripcion":"Platillo para que juegues con tu hermosa mascota, disfruta tus mejores momentos con ellas",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "accesorio-04",
+        "titulo": "Accesorio 04",
+        "imagen": "img/Accesorios/Acesorio4.jpg",
+        "descripcion":"Peine para que lleves a todos lados, cuidalos, recuerda que esta es la mejor manera de dar amor",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 9800
+    },
+    {
+        "id": "accesorios-05",
+        "titulo": "Accesorio 05",
+        "imagen": "img/Accesorios/Acesorio5.jpg",
+        "descripcion":"Jaula para mascota, llevala segura contigo a todas partes",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 63000
+    },
+    {
+        "id": "accesorios-06",
+        "titulo": "Accesorio 06",
+        "imagen": "img/Accesorios/Acesorio6.jpg",
+        "descripcion":"Sal a dar un paseo, lo mejor de esta vida es coleccionar momentos",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 4850
+    },
+    {
+        "id": "alimento-01",
+        "titulo": "Alimento 01",
+        "imagen": "img/Alimentos/Alimento1.jpg",
+        "descripcion":" SuperCanine NutriPlus es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 19600
+    },
+    {
+        "id": "alimento-02",
+        "titulo": "Alimento 02",
+        "imagen": "img/Alimentos/Alimento2.jpg",
+        "descripcion":"Dow Chow es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 17586
+    },
+    {
+        "id": "alimento-03",
+        "titulo": "Alimento 03",
+        "imagen": "img/Alimentos/Alimento3.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 25600
+    },
+    {
+        "id": "alimento-04",
+        "titulo": "Alimento 04",
+        "imagen": "img/Alimentos/Alimento4.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 9630
+    },
+    {
+        "id": "alimento-05",
+        "titulo": "Alimento 05",
+        "imagen": "img/Alimentos/Alimento5.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 23600
+    },
+    {
+        "id": "alimento-06",
+        "titulo": "Alimento 06",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "imagen": "img/Alimentos/Alimento6.jpg",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 39100
+    },
+    {
+        "id": "alimento-07",
+        "titulo": "Alimento 07",
+        "imagen": "img/Alimentos/DogShoe2.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 14200
+    },
+    {
+        "id": "alimento-08",
+        "titulo": "Alimento 08",
+        "imagen": "img/Alimentos/DogShoe3.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 16300
+    },
+    {
+        "id": "alimento-09",
+        "titulo": "Alimento 09",
+        "imagen": "img/Alimentos/DogShoe3.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 42300
+    },
+    {
+        "id": "alimento-10",
+        "titulo": "Alimento 10",
+        "imagen": "img/Alimentos/Equi1.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 5620
+    },
+    {
+        "id": "alimento-11",
+        "titulo": "Alimento 11",
+        "imagen": "img/Alimentos/Equi2.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 36800
+    },
+    {
+        "id": "alimento-12",
+        "titulo": "Alimento 12",
+        "imagen": "img/Alimentos/Equi3.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 5620
+    },
+    {
+        "id": "alimento-13",
+        "titulo": "Alimento 13",
+        "imagen": "img/Alimentos/Max2.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 74800
+    },
+    {
+        "id": "alimento-13",
+        "titulo": "Alimento 13",
+        "imagen": "img/Alimentos/Max3.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 38000
+    },
+    {
+        "id": "alimento-14",
+        "titulo": "Alimento 14",
+        "imagen": "img/Alimentos/Max4.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 96300
+    },
+    {
+        "id": "alimento-15",
+        "titulo": "Alimento 15",
+        "imagen": "img/Alimentos/Nulo2.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 38000
+    },
+    {
+        "id": "alimento-16",
+        "titulo": "Alimento 16",
+        "imagen": "img/Alimentos/Nulo3.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 50000
+    },
+    {
+        "id": "alimento-17",
+        "titulo": "Alimento 17",
+        "imagen": "img/Alimentos/Nulo4.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 98000
+    },
+    {
+        "id": "alimento-18",
+        "titulo": "Alimento 18",
+        "imagen": "img/Alimentos/Nutrion2.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 68000
+    },
+    {
+        "id": "alimento-19",
+        "titulo": "Alimento 19",
+        "imagen": "img/Alimentos/Nutrion3.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 82000
+    },
+    {
+        "id": "alimento-20",
+        "titulo": "Alimento 20",
+        "imagen": "img/Alimentos/Nutrion4.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 68200
+    },
+    {
+        "id": "alimento-21",
+        "titulo": "Alimento 21",
+        "imagen": "img/Alimentos/Roku2.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 53100
+    },
+    {
+        "id": "alimento-22",
+        "titulo": "Alimento 22",
+        "imagen": "img/Alimentos/Roku3.jpg",
+        "descripcion":"es un alimento balanceado diseñado específicamente para satisfacer las necesidades nutricionales de perros de todas las edades y tamaños. Formulado por expertos en nutrición animal, este alimento ofrece una combinación cuidadosamente equilibrada de ingredientes de alta calidad para promover la salud y el bienestar de tu mascota.",
+        "categoria": {
+            "nombre": "Alimentos",
+            "id": "alimentos"
+        },
+        "precio": 95200
+    },
+    {
+        "id": "juguete-01",
+        "titulo": "Juguete 01",
+        "imagen": "img/Juguetes/Juguete1.jpg",
+        "descripcion":" es la opción perfecta para mantener a tu mascota entretenida y estimulada durante horas. Diseñado pensando en la diversión y el ejercicio, este juguete ofrece una experiencia interactiva que satisface las necesidades naturales de juego y exploración de tu compañero peludo.",
+        "categoria": {
+            "nombre": "Juguetes",
+            "id": "juguetes"
+        },
+        "precio": 20000
+    },
+    {
+        "id": "juguete-02",
+        "titulo": "Juguete 02",
+        "imagen": "img/Juguetes/Juguete2.jpg",
+        "descripcion":" es la opción perfecta para mantener a tu mascota entretenida y estimulada durante horas. Diseñado pensando en la diversión y el ejercicio, este juguete ofrece una experiencia interactiva que satisface las necesidades naturales de juego y exploración de tu compañero peludo.",
+        "categoria": {
+            "nombre": "Juguetes",
+            "id": "juguetes"
+        },
+        "precio": 15000
+    },
+    {
+        "id": "juguete-03",
+        "titulo": "Juguete 03",
+        "imagen": "img/Juguetes/Juguete3.jpg",
+        "descripcion":" es la opción perfecta para mantener a tu mascota entretenida y estimulada durante horas. Diseñado pensando en la diversión y el ejercicio, este juguete ofrece una experiencia interactiva que satisface las necesidades naturales de juego y exploración de tu compañero peludo.",
+        "categoria": {
+            "nombre": "Juguetes",
+            "id": "juguetes"
+        },
+        "precio": 17000
+    },
+    {
+        "id": "juguete-04",
+        "titulo": "Juguete 04",
+        "imagen": "img/Juguetes/Juguete4.jpg",
+        "descripcion":" es la opción perfecta para mantener a tu mascota entretenida y estimulada durante horas. Diseñado pensando en la diversión y el ejercicio, este juguete ofrece una experiencia interactiva que satisface las necesidades naturales de juego y exploración de tu compañero peludo.",
+        "categoria": {
+            "nombre": "Juguetes",
+            "id": "juguetes"
+        },
+        "precio": 27000
+    },
+    {
+        "id": "juguete-05",
+        "titulo": "Juguete 05",
+        "imagen": "img/Juguetes/Juguete5.jpg",
+        "descripcion":" es la opción perfecta para mantener a tu mascota entretenida y estimulada durante horas. Diseñado pensando en la diversión y el ejercicio, este juguete ofrece una experiencia interactiva que satisface las necesidades naturales de juego y exploración de tu compañero peludo.",
+        "categoria": {
+            "nombre": "Juguetes",
+            "id": "juguetes"
+        },
+        "precio": 6520
+    },
+    {
+        "id": "juguete-06",
+        "titulo": "Juguete 06",
+        "imagen": "img/Juguetes/Juguete6.jpg",
+        "descripcion":" es la opción perfecta para mantener a tu mascota entretenida y estimulada durante horas. Diseñado pensando en la diversión y el ejercicio, este juguete ofrece una experiencia interactiva que satisface las necesidades naturales de juego y exploración de tu compañero peludo.",
+        "categoria": {
+            "nombre": "Juguetes",
+            "id": "juguetes"
+        },
+        "precio": 7520
+    }
+]

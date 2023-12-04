@@ -1,134 +1,3 @@
-body{
-    background-color: #7DA66A;
-}
-/* Usuario */
-.Sesion{
-    display: none;
-}
-.Close{
-    display: none;
-}
-.Sesion1{
-    background-color: white;
-    position: absolute;
-    list-style-type: none;
-    width: 400px;
-    border: 1px solid black;
-    color: black;
-}
-.Sesion1 p{
-    margin-top: 10px;
-    color: black;
-}
-.Sesion1 button{
-    width: 90%;
-    margin-right: 40px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-#CargarNombre{
-    margin-left: 10px;
-}
-.Crear{
-    margin-top: 10px;
-}
-
-/* Cabecera */
-.he .Oscuro{
-    color: white;
-}
-.he .Oscuro:hover{
-    background-color: rgb(255, 255, 255);
-    color: #7DA66A;
-}
-#Luna{
-    border: none;
-    background-color: white;
-}
-.Luna{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: black;
-    font-size: 30px;
-}
-#Sol{
-    border: none;
-    background-color: black;
-}
-.Sol{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    font-size: 30px;
-}
-.ImagenTitulo{
-    background-color: white;
-    text-align: center;
-}
-.ImagenTitulo img{
-    content:center;
-    height: 130px;
-}
-.Top{
-    list-style-type: none;
-    overflow: hidden;
-    background-color: white;
-}
-.he{
-    float: left;
-  }
-.he a{
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-.he a:hover {
-    background-color: black;
-    color: #7DA66A;
-    padding-bottom: 16px;
-}
-.heRight{
-    float: right;
-    margin: 0 5px;
-}
-.heRight svg{
-    margin-top: 10px;
-    width: 30px;
-    height: 100%;
-    fill: rgb(0, 0, 0);
-    fill-rule: evenodd;
-}
-.Buscar{
-    top: 9px;
-    width: 300px;
-    margin-right: 10px;
-}
-span{
-    width: 40px;
-}
-.iconos{
-    background-color: white;
-    border: none;
-    padding-top: 0px;
-    padding-bottom: 14px;
-    height: 54px;
-}
-.heRight svg:hover{ 
-    fill: #7DA66A;
-    background-color: black;
-    border-radius: 5px;
-    padding-left: 4px;
-    padding-right:  4px;
-    width: 30px;
-}
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 body{
@@ -366,7 +235,6 @@ aside {
 .texto-footer {
     color: var(--clr-main-light);
     font-size: .85rem;
-    background-color: #458942;
 }
 
 main {
@@ -389,7 +257,7 @@ main {
 }
 
 .producto-imagen {
-    max-width: 238px;
+    max-width: 100%;
     border-radius: 1rem;
 }
 
@@ -398,7 +266,7 @@ main {
     color: var(--clr-white);
     padding: .5rem;
     border-radius: 1rem;
-    width: 238px;  
+    width: 271px;  
     height: 100px; 
     position: relative;
     display: flex;
@@ -544,9 +412,3 @@ main {
     cursor: pointer;
 }
   
-.Oscuroo{
-    background-color: black;
-}
-.Oscuroo svg{
-    fill: white;
-}
