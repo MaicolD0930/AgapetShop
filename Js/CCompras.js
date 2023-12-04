@@ -1,4 +1,7 @@
 
+
+
+
 $(document).ready(function() {
       //Validar si esta registrado
       var registrado = localStorage.getItem('Registrado');

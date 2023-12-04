@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/edit.css">
+    <title>Edicion de perfil</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Edición de Perfil</h1>
+    </header>
+    <div id="edit-form-container">
+        <h2>Editar Perfil</h2>
+        <div id="edit-form">
+            <label for="new-name">Nuevo Nombre:</label>
+            <input id="NombreImput" type="text" placeholder="Nombre">
+
+            <label for="new-name">Nuevo Apellido:</label>
+            <input type="text" id="ApellidoImput">
+
+            <label for="new-address">Nueva Dirección:</label>
+            <input type="text" id="DireccionImput">
+
+            <label for="new-name">Nuevo Telefono:</label>
+            <input type="text" id="NumeroImput">
+
+            <label for="new-name">Nuevo Correo:</label>
+            <input type="text" id="CorreoImput">
+
+            <label for="new-name">Nuevo Descripción:</label>
+            <input type="text" id="DescripcionImput">
+
+            <label for="new-photo">Nueva Foto de Perfil:</label>
+            <input type="file" id="PerfilImagen" name="new-perfil">
+
+            <button id="Guardar" type="submit">Guardar Cambios</button>
+            <button id="Volver">Volver</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Edición de Perfil. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="Js/Edit.js"></script>
+</body>
+</html>

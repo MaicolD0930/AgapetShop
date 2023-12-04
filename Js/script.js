@@ -102,7 +102,9 @@ var ESTADO;
                                                         NombreG = nombre; ApellidoG = apellido; DireccionG = direccion;
                                                         CedulaG = cedula; NumeroG = numero; CorreoG = correo;
                                                         ContraseñaG = contraseña;
-                                                
+                                                        DescripcionG="Añade tu descripcion!";
+                                                        PerfilG="img/Persona..png";
+                                                        PortadaG="img/leon.jpeg";
                                                         localStorage.setItem('NombreG', NombreG);
                                                         localStorage.setItem('ApellidoG', ApellidoG);
                                                         localStorage.setItem('DireccionG', DireccionG);
@@ -110,6 +112,9 @@ var ESTADO;
                                                         localStorage.setItem('NumeroG', NumeroG);
                                                         localStorage.setItem('CorreoG', CorreoG);
                                                         localStorage.setItem('ContraseñaG', ContraseñaG);
+                                                        localStorage.setItem('CorreoG', DescripcionG);
+                                                        localStorage.setItem('PerfilG', PerfilG);
+                                                        localStorage.setItem('PortadaG', PortadaG);
                                                         alert("Su usuario fue creado con exito!, Bienvenido "+NombreG+" "+ApellidoG)
                                                     }
                                                 }
