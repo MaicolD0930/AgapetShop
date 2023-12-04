@@ -1,6 +1,16 @@
 $(document).ready(function() {
+  var registrado = localStorage.getItem('Registrado');
     //Validar si esta registrado
-    var registrado = localStorage.getItem('Registrado');
+    if(registrado==="Si"){
+      $('#MiPerfil').click(Perfil);
+      function Perfil() {
+        window.location.href = "perfil.html";
+      }
+    }else{
+      $("#MiPerfil").toggle();
+    }
+
+
     $('#Sesion').click(MostrarSesion);
     function MostrarSesion() {
       if(registrado==="Si"){
@@ -17,6 +27,7 @@ $(document).ready(function() {
       registrado = "No";
       localStorage.setItem('Registrado', registrado);
       $(".Sesion").toggle();
+      location.reload();
     }
     $("#CrearC").click(function() {
       window.location.href = "reserva.html";

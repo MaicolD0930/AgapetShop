@@ -10,6 +10,15 @@ $(document).ready(function() {
 
     //Validar si esta registrado
     var registrado = localStorage.getItem('Registrado');
+    if(registrado==="Si"){
+      $('#MiPerfil').click(Perfil);
+      function Perfil() {
+        window.location.href = "perfil.html";
+      }
+    }else{
+      $("#MiPerfil").toggle();
+    }
+    
     $('#Sesion').click(MostrarSesion);
     function MostrarSesion() {
       if(registrado==="Si"){

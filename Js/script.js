@@ -112,10 +112,11 @@ var ESTADO;
                                                         localStorage.setItem('NumeroG', NumeroG);
                                                         localStorage.setItem('CorreoG', CorreoG);
                                                         localStorage.setItem('ContraseñaG', ContraseñaG);
-                                                        localStorage.setItem('CorreoG', DescripcionG);
+                                                        localStorage.setItem('DescripcionG', DescripcionG);
                                                         localStorage.setItem('PerfilG', PerfilG);
                                                         localStorage.setItem('PortadaG', PortadaG);
                                                         alert("Su usuario fue creado con exito!, Bienvenido "+NombreG+" "+ApellidoG)
+                                                        location.reload();
                                                     }
                                                 }
                                             }
@@ -130,6 +131,7 @@ var ESTADO;
         }
     }
 });
+$(document).ready(function() {
 CorreoG = localStorage.getItem('CorreoG');
 ContraseñaG = localStorage.getItem('ContraseñaG');
 $("#signIn").click(function () {
@@ -139,10 +141,11 @@ $("#signIn").click(function () {
             localStorage.setItem('Registrado', registrado);
             window.location.href = "Inicio.html";
         }else{
-            alert("Usuario y/o contraseña incorrecto")
+            alert("Usuario y/o contraseña incorrecto"+ CorreoG+ ContraseñaG)
+
         }
 });
-
+});
 
 
 

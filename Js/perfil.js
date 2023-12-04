@@ -23,5 +23,8 @@ $(document).ready(function() {
     $("#Editar").click(function() {
         window.location.href = "EditarPerfil.html";
     });
+    $("#Volver").click(function() {
+        window.location.href = "Inicio.html";
+    });
 
 });
