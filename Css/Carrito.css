@@ -386,6 +386,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    
 }
 
 .producto-imagen {
@@ -543,6 +544,14 @@ main {
     background-color: transparent;
     cursor: pointer;
 }
+  .toastify{
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    right: 40%;
+    border-radius: 10px;
+  }
+
   
 .Oscuroo{
     background-color: black;
