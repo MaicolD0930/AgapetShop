@@ -130,15 +130,19 @@ function actualizarTotal() {
 
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
+    var registrado = localStorage.getItem('Registrado');
+    if(registrado==="Si"){
+      productosEnCarrito.length = 0;
+      localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+      
+      contenedorCarritoVacio.classList.add("disabled");
+      contenedorCarritoProductos.classList.add("disabled");
+      contenedorCarritoAcciones.classList.add("disabled");
+      contenedorCarritoComprado.classList.remove("disabled");
 
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-    
-    contenedorCarritoVacio.classList.add("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
-
+    }else{
+      alert("!!Debe iniciar sesion para realizar una compra!!")
+    }
 }
 
 $(document).ready(function() {

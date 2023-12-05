@@ -141,7 +141,7 @@ $("#signIn").click(function () {
             localStorage.setItem('Registrado', registrado);
             window.location.href = "Inicio.html";
         }else{
-            alert("Usuario y/o contraseña incorrecto"+ CorreoG+ ContraseñaG)
+            alert("Usuario y/o contraseña incorrecto")
 
         }
 });

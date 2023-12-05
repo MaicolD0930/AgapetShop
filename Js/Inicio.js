@@ -39,6 +39,9 @@ $(document).ready(function() {
     $("#Fav").click(function() {
         window.location.href = "ProductoFavorito.html";
     });
+    $("#Carro").click(function() {
+      window.location.href = "carrito.html";
+  });
 
 
         //Agregar Comentario
