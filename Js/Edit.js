@@ -1,3 +1,56 @@
+$(document).ready(function() {
+    var Estado;
+    $('#Sol').hide();
+    var Colo = localStorage.getItem('Color');
+    if(Colo==="Oscuro"){
+     ModoOscuro();
+    }
+    else{
+     ModoLuz();
+    }
+    
+      $('#Luna').click(ModoOscuro);
+      function ModoOscuro() {
+        Estado = "Oscuro";
+        localStorage.setItem('Color', Estado);
+        $('body').css("background-color", "#3e423d");
+        //Header
+        $('#Luna').hide();
+        $('#Sol').show();
+        $(".ImagenTitulo").css("background-color", "black");
+        $(".Top").css("background-color", "black");
+        $(".Top a").addClass("Oscuro");
+        $(".iconos").addClass("Oscuroo");
+        //Body
+        $("#edit-form-container").css("background-color", "black");
+        $("#edit-form-container").css("color", "white");
+        $("label").css("color", "white");
+        //Footer
+    
+      }
+      $('#Sol').click(ModoLuz);
+      function ModoLuz() {
+        Estado = "Luz";
+        localStorage.setItem('Color', Estado);
+        $('body').css("background-color", "#7DA66A");
+        //Header
+        $('#Luna').show();
+        $('#Sol').hide();
+        $(".ImagenTitulo").css("background-color", "white");
+        $(".Top a").css("color", "black");
+        $(".Top").css("background-color", "white");
+        $(".Top a").removeClass("Oscuro");
+        $(".Top a").css("color", "#7DA66A");
+        $(".iconos").removeClass("Oscuroo");
+        //Body
+        $("#edit-form-container").css("background-color", "white");
+        $("#edit-form-container").css("color", "black");
+        $("label").css("color", "black");
+        //Footer
+    
+      }
+    });    
+    
     var NUMEROS = /^[^\d]+$/;var CORREO = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var NombreG, ApellidoG, DireccionG, NumeroG, CorreoG, registrado, DescripcionG, PerfilG;
     //Guardar Valores
@@ -10,7 +63,6 @@
     var descripcion= $("#DescripcionImput").val();
 
     var portada = $('#PerfilImagen')[0];
-    
     
 
 
@@ -44,7 +96,6 @@
                                     }else{
                                         if (portada.files.length > 0) {
                                             PerfilG ="img/"+portada.files[0].name;
-                                            alert(PerfilG);
                                             NombreG = nombre; ApellidoG = apellido; DireccionG = direccion;
                                             NumeroG = numero; CorreoG = correo; DescripcionG = descripcion;
     
@@ -55,7 +106,7 @@
                                             localStorage.setItem('CorreoG', CorreoG);
                                             localStorage.setItem('DescripcionG', DescripcionG);
                                             localStorage.setItem('PerfilG', PerfilG);
-                                            alert("Su usuario fue creado con exito!, Bienvenido "+NombreG+" "+ApellidoG)
+                                            alert("Informacion actualizada!,  "+NombreG+" "+ApellidoG)
                                         } else {
                                             alert('Selecciona una imagen antes de intentar obtener el nombre.');
                                         }   
@@ -73,7 +124,5 @@
 $("#Volver").click(function () {
     window.location.href = "perfil.html";
 });
-
-
 
 

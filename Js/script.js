@@ -103,7 +103,7 @@ var ESTADO;
                                                         CedulaG = cedula; NumeroG = numero; CorreoG = correo;
                                                         ContraseñaG = contraseña;
                                                         DescripcionG="Añade tu descripcion!";
-                                                        PerfilG="img/Persona..png";
+                                                        PerfilG="img/tips.png";
                                                         PortadaG="img/leon.jpeg";
                                                         localStorage.setItem('NombreG', NombreG);
                                                         localStorage.setItem('ApellidoG', ApellidoG);

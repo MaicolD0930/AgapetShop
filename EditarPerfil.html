@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="Css/edit.css">
     <title>Edicion de perfil</title>
     
@@ -10,6 +13,12 @@
 <body>
     <header>
         <h1>Edición de Perfil</h1>
+        <button id="Luna">
+            <i class="Luna bi bi-moon-fill"></i>
+        </button>
+        <button id="Sol">
+            <i class="Sol bi bi-brightness-high-fill"></i>
+        </button>
     </header>
     <div id="edit-form-container">
         <h2>Editar Perfil</h2>
@@ -18,25 +27,28 @@
             <input id="NombreImput" type="text" placeholder="Nombre">
 
             <label for="new-name">Nuevo Apellido:</label>
-            <input type="text" id="ApellidoImput">
+            <input type="text" id="ApellidoImput" placeholder="Apellido">
 
             <label for="new-address">Nueva Dirección:</label>
-            <input type="text" id="DireccionImput">
+            <input type="text" id="DireccionImput" placeholder="Direccion">
 
             <label for="new-name">Nuevo Telefono:</label>
-            <input type="text" id="NumeroImput">
+            <input type="text" id="NumeroImput" placeholder="Telefono">
 
             <label for="new-name">Nuevo Correo:</label>
-            <input type="text" id="CorreoImput">
+            <input type="text" id="CorreoImput" placeholder="Correo">
 
             <label for="new-name">Nuevo Descripción:</label>
-            <input type="text" id="DescripcionImput">
+            <input type="text" id="DescripcionImput" placeholder="Descripcion">
 
             <label for="new-photo">Nueva Foto de Perfil:</label>
             <input type="file" id="PerfilImagen" name="new-perfil">
 
-            <button id="Guardar" type="submit">Guardar Cambios</button>
-            <button id="Volver">Volver</button>
+            <div class="centrar">
+                <button id="Guardar" type="submit">Guardar Cambios</button>
+                <button id="Volver">Volver</button>
+            </div>
+
         </div>
     </div>
     <footer>
