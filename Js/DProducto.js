@@ -91,23 +91,11 @@ function agregarAlCarritoDesdeDetalles() {
     }
 
     Toastify({
-        text: "Producto agregado",
-        duration: 3000,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-            background: "linear-gradient(to right, #458942,#528443)",
-            borderRadius: "2rem",
-            textTransform: "uppercase",
-            fontSize: ".75rem"
-        },
-        offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
-        },
-        onClick: function () { } // Callback after click
+      text: "Producto agregado",
+      duration: 3000,
+      gravity: "right", // Posición de la notificación (top, bottom, left, right) (opcional)
+      position: "right", // Posición dentro de la ubicación (opcional)
+      backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)", // Color de fondo (opcional)
     }).showToast();
 
     if (productosEnCarrito.some(producto => producto.id === idBoton)) {
